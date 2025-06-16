@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUCCERS - NFT Collection</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="icon" type="image/x-icon" href="pfp4.avif">
+</head>
+<body>
+    <!-- Floating particles -->
+    <div class="particle" style="width: 10px; height: 10px; top: 20%; left: 10%; animation-delay: 0s;"></div>
+    <div class="particle" style="width: 6px; height: 6px; top: 60%; left: 80%; animation-delay: 2s;"></div>
+    <div class="particle" style="width: 8px; height: 8px; top: 40%; left: 20%; animation-delay: 4s;"></div>
+
+    <header id="headerbkg">
+        <nav class="container">
+            <div class="logo">SUCCERS NFT</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#secondary-mrkt">Secondary</a></li>
+                <li><a href="#mint">Mint</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>SUCCERS NFT</h1>
+                        <p>SUCCERS NFT embodies the nature of every community member of Succinct. This is one for the artists, devs, threadoors, reply guys and every single person in Succinct. Succers are breaking the status quo everywhere.</p>
+                        <button class="cta-button" onclick="scrollToSection('mint')">Start Minting</button>
+                    </div>
+                    <div class="slideshow-container" id="gallery">
+                        <div class="slide active">
+                            <img src="pfp1.avif" alt="SUCCERS NFT 1">
+                        </div>
+                        <div class="slide">
+                            <img src="pfp2.avif" alt="SUCCERS NFT 2">
+                        </div>
+                        <div class="slide">
+                            <img src="pfp3.avif" alt="SUCCERS NFT 3">
+                        </div>
+                        <div class="slide">
+                            <img src="pfp4.avif" alt="SUCCERS NFT 4">
+                        </div>
+                        <div class="slide">
+                            <img src="pfp5.avif" alt="SUCCERS NFT 5">
+                        </div>
+
+                        <button class="slide-nav prev" onclick="changeSlide(-1)">❮</button>
+                        <button class="slide-nav next" onclick="changeSlide(1)">❯</button>
+
+                        <div class="slide-indicators">
+                            <span class="dot active" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(4)"></span>
+                            <span class="dot" onclick="currentSlide(5)"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="mint" class="minting">
+            <h2 style="font-size: 3rem;">MINT YOUR SUCCERS</h2>
+            <p style="padding: 20px;">Join the Revolution. Become a SUCCER!!!</p>
+            <iframe id='iframe-widget' src='https://0x0234760aa2e5274eb06df391df8cc7adf22ab4cf_10143.nfts2.me/?widget=classic&bgColor=f100e6' 
+            class="mint-wdgt"></iframe>
+        </section>
+
+    <section id="secondary-mrkt">
+        <h3>SECONDARY MARKET</h3>
+        <div class="secondary-pics">
+            
+            <div class="sec-img">
+               <a href="https://opensea.io/" target="_blank"><img src="OS.jpg" class="sec-img1"> 
+            <p>OPENSEA</p></a>
+            </div>
+            <div class="sec-img">
+                <a href="https://magiceden.io/" target="_blank"><img src="ME.png" class="sec-img1">
+            <p>MAGICEDEN</p></a> 
+        </div>
+        </div>
+    </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <h3>Join the SUCCERS Community on <a href="#" target="_blank">Twitter</a></h3>
+            
+            <p style="margin-top: 30px; opacity: 0.7;">NFT Art made by <a href="https://x.com/_laws0n" target="_blank">Lawson</a> & Website made by <a href="https://x.com/Magnus_p1" target="_blank">Magnus</a></p>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
